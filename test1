@@ -31,10 +31,9 @@ local function iniciar2()
                 if spawnLoc.Position.Y < infinite then
                     infinite = spawnLoc.Position.Y
                     highSpawn = spawnLoc
-                    print(spawnLoc.. " Y:".. spawnLoc.Position.Y)
+                    print(spawnLoc.Name.. " Y:".. spawnLoc.Position.Y)
                 end
             end
-            print(spawns)
             wait(3)
         end
     end)
