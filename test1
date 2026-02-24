@@ -35,7 +35,7 @@ local function iniciar2()
                 end
             end
             print(spawns)
-            wait(15)
+            wait(3)
         end
     end)
 
