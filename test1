@@ -80,7 +80,7 @@ toggle.MouseButton1Click:Connect(function()
         iniciar()
         iniciar2()
     end
-    toggle.Text = ativo and "Ativado" or "Desativado"
+    toggle.Text = ativo and "Ativado" or "Desativadinho"
 end)
 
 -- Lista de jogadores
