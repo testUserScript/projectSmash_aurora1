@@ -25,14 +25,16 @@ toggle.BackgroundColor3 = Color3.fromRGB(50,50,50)
 local function iniciar2()
     task.spawn(function ()
         while ativo do
-            local spawnsLoc = game.Workspace.Markers.teleporters
+            local spawns = game.Workspace.Markers.teleporters
             local infinite = math.huge
             for _, spawnLoc in pairs(spawns:GetChildren()) do
-                if spawnLo.Position.Y < infinite then
+                if spawnLoc.Position.Y < infinite then
                     infinite = spawnLoc.Position.Y
                     highSpawn = spawnLoc
+                    print(spawnLoc)
                 end
             end
+            print(spawns)
             wait(15)
         end
     end)
@@ -48,6 +50,7 @@ local function iniciar2()
         end
     end)
 end
+
 local function iniciar()
     task.spawn(function ()
         while ativo do
