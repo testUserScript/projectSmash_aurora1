@@ -34,7 +34,7 @@ local function iniciar2()
                     print(spawnLoc.. " Y:".. spawnLoc.Position.Y)
                 end
             end
-            print(spawns.. " Y:".. spawns.Position.Y)
+            print(spawns)
             wait(3)
         end
     end)
