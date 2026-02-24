@@ -31,10 +31,10 @@ local function iniciar2()
                 if spawnLoc.Position.Y < infinite then
                     infinite = spawnLoc.Position.Y
                     highSpawn = spawnLoc
-                    print(spawnLoc)
+                    print(spawnLoc.. " Y:".. spawnLoc.Position.Y)
                 end
             end
-            print(spawns)
+            print(spawns.. " Y:".. spawns.Position.Y)
             wait(3)
         end
     end)
@@ -80,7 +80,7 @@ toggle.MouseButton1Click:Connect(function()
         iniciar()
         iniciar2()
     end
-    toggle.Text = ativo and "Ativado" or "Desativadinho"
+    toggle.Text = ativo and "Ativado" or "Desativado"
 end)
 
 -- Lista de jogadores
