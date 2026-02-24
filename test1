@@ -31,7 +31,8 @@ local function iniciar2()
                 if spawnLoc.Position.Y < infinite then
                     infinite = spawnLoc.Position.Y
                     highSpawn = spawnLoc
-                    print(spawnLoc)
+                    print(spawnLoc.Name .. " teleports / y:".. spawnLoc.Position.Y)
+                    print(highSpawn.Name.. "menor spawn / y:".. highSpawn.Position.Y)
                 end
             end
             print(spawns)
